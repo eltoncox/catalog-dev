@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.dev.elton.dscatalog.entities.Category;
 import com.dev.elton.dscatalog.repositories.CategoryRepository;
@@ -12,8 +13,9 @@ import com.dev.elton.dscatalog.repositories.CategoryRepository;
 public class CategoryService {
 	
 	@Autowired
-	private CategoryRepository repository;
+	private CategoryRepository repository;	
 	
+	@Transactional(readOnly = true)
 	public List<Category> findAll() {
 		return repository.findAll();
 	}
