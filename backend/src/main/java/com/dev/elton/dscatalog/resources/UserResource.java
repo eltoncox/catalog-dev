@@ -22,7 +22,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.dev.elton.dscatalog.dto.UserDTO;
 import com.dev.elton.dscatalog.dto.UserInsertDTO;
-import com.dev.elton.dscatalog.service.UserService;
+import com.dev.elton.dscatalog.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
@@ -35,7 +35,7 @@ public class UserResource {
 	public ResponseEntity<Page<UserDTO>> findAll(
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
-			@RequestParam(value = "orderBy", defaultValue = "name") String orderBy,
+			@RequestParam(value = "orderBy", defaultValue = "firstName") String orderBy,
 			@RequestParam(value = "direction", defaultValue = "ASC") String direction			
 			){
 		

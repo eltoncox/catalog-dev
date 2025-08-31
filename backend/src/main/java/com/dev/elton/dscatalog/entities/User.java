@@ -28,7 +28,7 @@ public class User implements Serializable{
 	private String firstName;
 	private String lastName;
 	
-	@Column(unique = true)
+	@Column(unique = true)// não aceito um email repetido
 	private String email;
 	private String password;	
 	

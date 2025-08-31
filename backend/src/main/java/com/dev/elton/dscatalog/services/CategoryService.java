@@ -1,4 +1,4 @@
-package com.dev.elton.dscatalog.service;
+package com.dev.elton.dscatalog.services;
 
 import java.util.Optional;
 
@@ -15,8 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dev.elton.dscatalog.dto.CategoryDTO;
 import com.dev.elton.dscatalog.entities.Category;
 import com.dev.elton.dscatalog.repositories.CategoryRepository;
-import com.dev.elton.dscatalog.service.exception.DatabaseException;
-import com.dev.elton.dscatalog.service.exception.ResourceNotFoundException;
+import com.dev.elton.dscatalog.services.exception.DatabaseException;
+import com.dev.elton.dscatalog.services.exception.ResourceNotFoundException;
 
 
 

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.dev.elton.dscatalog.dto.ProductDTO;
-import com.dev.elton.dscatalog.service.ProductService;
+import com.dev.elton.dscatalog.services.ProductService;
 
 @RestController
 @RequestMapping(value = "/products")

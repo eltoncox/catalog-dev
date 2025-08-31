@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.dev.elton.dscatalog.dto.CategoryDTO;
-import com.dev.elton.dscatalog.service.CategoryService;
+import com.dev.elton.dscatalog.services.CategoryService;
 
 
 @RestController

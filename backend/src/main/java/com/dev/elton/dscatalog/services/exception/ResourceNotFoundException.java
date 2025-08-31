@@ -1,4 +1,4 @@
-package com.dev.elton.dscatalog.service.exception;
+package com.dev.elton.dscatalog.services.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

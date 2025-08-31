@@ -1,4 +1,4 @@
-package com.dev.elton.dscatalog.service;
+package com.dev.elton.dscatalog.services;
 
 import java.util.Optional;
 
@@ -20,8 +20,8 @@ import com.dev.elton.dscatalog.entities.Role;
 import com.dev.elton.dscatalog.entities.User;
 import com.dev.elton.dscatalog.repositories.RoleRepository;
 import com.dev.elton.dscatalog.repositories.UserRepository;
-import com.dev.elton.dscatalog.service.exception.DatabaseException;
-import com.dev.elton.dscatalog.service.exception.ResourceNotFoundException;
+import com.dev.elton.dscatalog.services.exception.DatabaseException;
+import com.dev.elton.dscatalog.services.exception.ResourceNotFoundException;
 
 @Service
 public class UserService {
