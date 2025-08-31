@@ -3,16 +3,16 @@ package com.dev.elton.dscatalog.resources.exceptions;
 import java.io.Serializable;
 import java.time.Instant;
 
-public class StandarError implements Serializable{
+public class StandardError implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Instant timestamp;
 	private Integer status;
 	private String error;
 	private String message;
 	private String path;
 	
-	public StandarError() {		
+	public StandardError() {
 	}
 
 	public Instant getTimestamp() {
@@ -54,7 +54,4 @@ public class StandarError implements Serializable{
 	public void setPath(String path) {
 		this.path = path;
 	}
-	
-	
-	
 }

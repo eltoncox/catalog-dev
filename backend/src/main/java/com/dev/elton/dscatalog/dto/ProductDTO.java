@@ -9,20 +9,21 @@ import java.util.Set;
 import com.dev.elton.dscatalog.entities.Category;
 import com.dev.elton.dscatalog.entities.Product;
 
-public class ProductDTO implements Serializable{
-	
+
+public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
-	private String name;	
+	private String name;
 	private String description;
 	private Double price;
 	private String imgUrl;
 	private Instant date;
 	
 	private List<CategoryDTO> categories = new ArrayList<>();
-		
-	public ProductDTO() {}
+	
+	public ProductDTO() {
+	}
 
 	public ProductDTO(Long id, String name, String description, Double price, String imgUrl, Instant date) {
 		this.id = id;
@@ -102,8 +103,4 @@ public class ProductDTO implements Serializable{
 	public void setCategories(List<CategoryDTO> categories) {
 		this.categories = categories;
 	}
-	
-	
-	
-
 }
