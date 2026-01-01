@@ -30,8 +30,7 @@ public class UserInsertValidator implements ConstraintValidator<UserInsertValid,
 		User user = repository.findByEmail(dto.getEmail());
 		if(user != null ) {
 			list.add(new FieldMessage("email", "Email já existente"));
-		}
-			
+		}			
 		
 		for (FieldMessage e : list) {
 			context.disableDefaultConstraintViolation();

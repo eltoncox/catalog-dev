@@ -19,7 +19,7 @@ import com.dev.elton.dscatalog.resources.exceptions.FieldMessage;
 public class UserUpdateValidator implements ConstraintValidator<UserUpdateValid, UserUpdateDTO> {
 	
 	@Autowired
-	private HttpServletRequest request;
+	private HttpServletRequest request;// guardando as informações na requisição
 	
 	@Autowired
 	private UserRepository repository;
